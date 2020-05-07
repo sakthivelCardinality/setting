@@ -8,8 +8,8 @@
     {
       "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
       "hidden": false,
-      "startingDirectory": "D:\\petramai\\Api",
-      "name": "Ubuntu Petram",
+      "startingDirectory": "D:",
+      "name": "Ubuntu D",
       "source": "Windows.Terminal.Wsl",
       "fontFace": "Operator Mono"
     },
@@ -73,7 +73,7 @@
   "keybindings": [
     {
       "command": "closePane",
-      "keys": ["ctrl+shift+w", "ctrl+d"]
+      "keys": ["ctrl+shift+w"]
     },
     {
       "command": "nextTab",
