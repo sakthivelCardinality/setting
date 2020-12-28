@@ -15,10 +15,10 @@
     },
     {
       "guid": "{c28d2c36-08b3-4610-88bf-3225db6972ed}",
-      "name": "Bash Petram",
+      "name": "Bash",
       "commandline": "\"%PROGRAMFILES%\\Git\\usr\\bin\\bash.exe\" --login -i -l",
       "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-      "startingDirectory": "D:\\petramai\\Api",
+      "startingDirectory": "D:",
       "colorScheme": "Campbell",
       "fontFace": "Operator Mono"
     },
@@ -26,7 +26,7 @@
       "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
       "name": "Windows PowerShell",
       "commandline": "powershell.exe",
-	  "startingDirectory": "D:\\petramai\\Api",
+	  "startingDirectory": "D:",
       "hidden": false,
 	  "colorScheme": "Campbell",
       "fontFace": "Operator Mono"
@@ -35,7 +35,7 @@
       "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
       "name": "cmd",
       "commandline": "cmd.exe",
-	  "startingDirectory": "D:\\petramai\\Api",
+	  "startingDirectory": "D:",
       "hidden": false,
 	  "colorScheme": "Campbell",
       "fontFace": "Operator Mono"
