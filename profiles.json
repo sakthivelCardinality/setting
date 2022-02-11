@@ -1,106 +1,5 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "vertical",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+e"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "horizontal",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+o"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "up"
-            },
-            "keys": "alt+up"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "nextTab"
-            },
-            "keys": "ctrl+tab"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+shift+w"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+down"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "alt+left"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+right"
-        },
-        {
-            "command": "duplicateTab",
-            "keys": "ctrl+shift+t"
-        }
-    ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
     "copyOnSelect": true,
@@ -110,7 +9,13 @@
     "multiLinePasteWarning": false,
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "font": 
+            {
+                "face": "CaskaydiaCove NF"
+            }
+        },
         "list": 
         [
             {
@@ -126,41 +31,33 @@
                 "name": "Command Prompt"
             },
             {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "tabTitle":"Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "suppressApplicationTitle": true,
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\var\\www\\html\\project\\"
+            },
+            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "closeOnExit": "graceful",
-                "colorScheme": "Campbell",
-                "commandline": "C:/Program Files/Git/bin/bash.exe --login",
-                "cursorColor": "#FFFF00",
-                "font": 
-                {
-                    "face": "Cascadia Code",
-                    "size": 11
-                },
-                "guid": "{14ad203f-52cc-4110-90d6-d96e0f41b64d}",
-                "historySize": 9001,
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
                 "name": "Git Bash",
-                "padding": "0, 0, 0, 0",
-                "snapOnInput": true,
-                "startingDirectory": "D:\\Office\\Projects",
-                "tabTitle": "Git Bash"
+                "source": "Git"
             },
             {
-                "closeOnExit": "graceful",
-                "font": 
-                {
-                    "face": "Cascadia Code",
-                    "size": 11
-                },
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "name": "Debian",
+                "tabTitle":"Debian",
+                "suppressApplicationTitle": true,
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\var\\www\\html\\project\\"
+                "startingDirectory": "\\\\wsl$\\Debian\\var\\www\\html\\"
             }
         ]
     },
@@ -316,9 +213,9 @@
             "brightRed": "#EF2929",
             "brightWhite": "#EEEEEC",
             "brightYellow": "#FCE94F",
-            "cursorColor": "#FFFF00",
+            "cursorColor": "#20C20E",
             "cyan": "#06989A",
-            "foreground": "#20C20E",
+            "foreground": "#D3D7CF",
             "green": "#4E9A06",
             "name": "Tango Dark",
             "purple": "#75507B",
@@ -372,6 +269,107 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        }
+    ],
+ "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "vertical",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+e"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+t"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "horizontal",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+o"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+up"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "nextTab"
+            },
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+down"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+left"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+right"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+t"
         }
     ],
     "showTabsInTitlebar": true,
