@@ -1,11 +1,114 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+up"
+        },
+        {
+            "command": 
+            {
+                "action": "nextTab"
+            },
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+right"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+e"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+o"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+down"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+left"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+t"
+        }
+    ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "initialCols": 75,
     "initialRows": 25,
+    "launchMode": "maximized",
     "multiLinePasteWarning": false,
     "profiles": 
     {
@@ -13,31 +116,37 @@
         {
             "font": 
             {
-                "face": "CaskaydiaCove NF"
+                "face": "CaskaydiaCove Nerd Font",
+                "size": 12
             }
         },
         "list": 
         [
             {
-                "commandline": "powershell.exe",
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\var\\www\\html\\",
+                "suppressApplicationTitle": true
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Debian\\var\\www\\html\\",
+                "suppressApplicationTitle": true
+            },
+            {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "tabTitle":"Ubuntu",
-                "source": "Windows.Terminal.Wsl",
-                "suppressApplicationTitle": true,
-                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\var\\www\\html\\project\\"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -52,12 +161,40 @@
                 "source": "Git"
             },
             {
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "name": "Debian",
-                "tabTitle":"Debian",
-                "suppressApplicationTitle": true,
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Debian\\var\\www\\html\\"
+                "guid": "{d0dc7f04-1bfd-5fa4-b15f-a00f56978267}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{7c4624cf-5b84-516f-9d87-2e4a5de26262}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{7a2831e5-349a-5bd7-a7bd-bc89ad751f1c}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2017",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{69429e7c-b3d1-5b4a-a477-cd27ba599054}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{85247445-aefa-5cb6-884a-43222639db11}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -75,7 +212,7 @@
             "brightRed": "#E74856",
             "brightWhite": "#F2F2F2",
             "brightYellow": "#F9F1A5",
-            "cursorColor": "#20C20E",
+            "cursorColor": "#FFF000",
             "cyan": "#3A96DD",
             "foreground": "#20C20E",
             "green": "#13A10E",
@@ -213,7 +350,7 @@
             "brightRed": "#EF2929",
             "brightWhite": "#EEEEEC",
             "brightYellow": "#FCE94F",
-            "cursorColor": "#20C20E",
+            "cursorColor": "#FFFFFF",
             "cyan": "#06989A",
             "foreground": "#D3D7CF",
             "green": "#4E9A06",
@@ -269,107 +406,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
-        }
-    ],
- "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "vertical",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+e"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "horizontal",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+o"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "up"
-            },
-            "keys": "alt+up"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "nextTab"
-            },
-            "keys": "ctrl+tab"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+shift+w"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+down"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "keys": "alt+left"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+right"
-        },
-        {
-            "command": "duplicateTab",
-            "keys": "ctrl+shift+t"
         }
     ],
     "showTabsInTitlebar": true,
